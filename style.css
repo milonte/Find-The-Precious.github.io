@@ -1,0 +1,76 @@
+
+
+#felows-wanted img {
+    opacity: 0.5;
+}
+
+#felows-wanted .card:hover img{
+    opacity: 1;
+}
+
+#felows-wanted .card:hover .rewards-info {
+    visibility: hidden;
+}
+
+#felows-wanted .card:hover .wanted-name{
+    bottom: 10px;
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0%);
+    text-decoration: underline;
+}
+
+#felows-wanted {
+    position: relative;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: white;
+    background-blend-mode: overlay;
+    text-decoration: none;
+}
+
+#felows-wanted .rewards-info,
+#felows-wanted .wanted-name {
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    left:0;
+    right: 0;
+}
+
+#felows-wanted .rewards-info {
+    top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#felows-wanted .card .wanted-name {
+    color: white;
+    top: 75px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,50%);
+    padding: 5px;
+   
+}
+
+#felows-wanted .rewards-info .coins {
+    color: orange;
+}
+
+#get-rewards a {
+    display: flex;
+    float: right;
+}
+
+.carousel-inner img {
+    opacity: ;
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,70%);
+}
