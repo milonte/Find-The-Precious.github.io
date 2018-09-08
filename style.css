@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'tnganbi';
+    src: url('Font/tnganbi.ttf');
 
+    font-family: 'partybusiness';
+    src: url('Font/partybusiness.ttf');
+    
+    font-family: 'anirb';
+    src: url('Font/anirb___.ttf');
+    
+}
 
 #felows-wanted img {
     opacity: 0.5;
@@ -67,10 +77,34 @@
     float: right;
 }
 
-.carousel-inner img {
-    opacity: ;
+header .navbar {
+    background-color:#Fe661D;
 }
 
-.carousel-caption {
-    background-color: rgba(0,0,0,70%);
+header .nav-item {
+    display: inline;
+    justify-content: end;
+}
+
+header .navbar a {
+    font-family: "anirb";
+    color: white;
+    
+}
+
+header .navbar-brand {
+    font-size: 20px;
+}
+
+#navbar a{
+    font-size: 13px;
+}
+
+#navbar a:active {
+    text-decoration: underline;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    font-family: "partybusiness";
 }
