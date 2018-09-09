@@ -1,47 +1,133 @@
 @font-face {
     font-family: 'tnganbi';
-    src: url('Font/tnganbi.ttf');
-
+    src: url('Font/tnganbi.ttf'); }
+@font-face {
     font-family: 'partybusiness';
-    src: url('Font/partybusiness.ttf');
-    
+    src: url('Font/partybusiness.ttf'); }
+@font-face { 
     font-family: 'anirb';
-    src: url('Font/anirb___.ttf');
-    
+    src: url('Font/anirb___.ttf'); }
+
+body h3 {
+    font-family: "anirb";
+    font-size: 25px;
 }
 
+body h3 span {
+    font-size: 20px;
+}
+
+section {
+    padding-top: 0px;
+}
+
+section:nth-child(even) {
+    background-image: url("images/bg_light.png");
+    color: black;
+}
+
+section:nth-child(odd) {
+    background-image: url("images/bg_dark.png");
+    color: white;
+}
+
+/* --------------- NAVBAR ------------------- */
+
+header .navbar {
+    background-color:#Fe661D;
+}
+
+header .nav-item {
+    display: inline;
+}
+
+header .navbar a {
+    font-family: "anirb";
+    color: white;
+}
+
+header .navbar-brand {
+    font-size: 20px;
+}
+
+header .navbar-toggler-icon {
+    color: white;
+}
+
+#navbarNav {
+    text-align: right;
+    background-color:#Fe661D;
+}
+
+#navbarNav a{
+    font-size: 13px;
+    color: white;
+}
+
+#navbarNav a:active {
+    text-decoration: underline;
+}
+
+/* ------------CAROUSEL -------------------- */
+
+
+.carousel-caption h2,
+.carousel-caption p {
+    font-family: "partybusiness";
+    font-size: 40px;
+}
+
+.carousel-caption {
+    top: 40%;
+}
+
+/* ------------ FELLOWS WANTED ---------------- */
+
+
+#felows-wanted .badge {
+    color: rgba(0,0,0,60%);
+    margin-top: 20px;
+}
+
+#felows-wanted .badge:active {
+    color: #Fe661D;
+    text-decoration: underline;
+}
+
+
 #felows-wanted img {
-    opacity: 0.5;
+    opacity: 0.4;
+    padding: 0px;
 }
 
 #felows-wanted .card:hover img{
     opacity: 1;
 }
 
-#felows-wanted .card:hover .rewards-info {
+#felows-wanted .card:hover .rewards-info,
+#felows-wanted .card:hover .rewards-dead {
     visibility: hidden;
 }
 
-#felows-wanted .card:hover .wanted-name{
-    bottom: 10px;
-    font-size: 30px;
-    color: green;
-    font-weight: bold;
-    background-color: rgba(0,0,0,0%);
-    text-decoration: underline;
-}
 
 #felows-wanted {
     position: relative;
-    padding-left: 2px;
-    padding-right: 2px;
-    background-color: white;
-    background-blend-mode: overlay;
+    padding: 0;
+    padding-top : 30px;
     text-decoration: none;
 }
 
+#felows-wanted .row {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 40px;
+}
+
 #felows-wanted .rewards-info,
-#felows-wanted .wanted-name {
+#felows-wanted .wanted-name,
+#felows-wanted .rewards-dead,
+#felows-wanted .wanted-dead {
+    top: 20px;
     position: absolute;
     display: inline-block;
     margin: 0 auto;
@@ -51,60 +137,56 @@
 }
 
 #felows-wanted .rewards-info {
-    top: 10px;
     background-color: white;
-    border-radius: 20px;
+    color: black;
+    border-radius: 5px;
     padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 2px 2px 5px 5px white;
+    opacity: 0.7;
+    font-family: "partybusiness";
+    font-size: 25px;
+    font-weight: bold;
 }
 
-#felows-wanted .card .wanted-name {
-    color: white;
-    top: 75px;
-    font-size: 20px;
-    background-color: rgba(0,0,0,50%);
-    padding: 5px;
-   
+#felows-wanted .rewards-dead {
+    color: #Fe661D;
+    font-family: "partybusiness";
+    font-size: 50px;
+}
+
+#felows-wanted .wanted-dead {
+    text-decoration: line-through;
+    text-decoration-color: #Fe661D;
 }
 
 #felows-wanted .rewards-info .coins {
-    color: orange;
+    color: #Fe661D;
+}
+
+#felows-wanted .wanted-name,
+#felows-wanted .wanted-dead {
+    top: 40%;
+    bottom: 40%;
+    font-size: 45px;
+    padding:5px;
+    font-family: "partybusiness";
+}
+
+#felows-wanted .card:hover .wanted-name{
+    background-color: rgba(0,0,0,50%);
+}
+
+#felows-wanted .card {
+    background-color: rgba(0,0,0,90%);
+    color: rgba(255,255,255,80%);
+    padding: 5px;
+    font-family: "partybusiness";
+    font-size: 30px;
 }
 
 #get-rewards a {
     display: flex;
     float: right;
-}
-
-header .navbar {
-    background-color:#Fe661D;
-}
-
-header .nav-item {
-    display: inline;
-    justify-content: end;
-}
-
-header .navbar a {
-    font-family: "anirb";
-    color: white;
-    
-}
-
-header .navbar-brand {
-    font-size: 20px;
-}
-
-#navbar a{
-    font-size: 13px;
-}
-
-#navbar a:active {
-    text-decoration: underline;
-}
-
-.carousel-caption h3,
-.carousel-caption p {
-    font-family: "partybusiness";
 }

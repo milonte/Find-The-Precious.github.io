@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FindThePrecious</title>
+    <title>Find The Precious</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -13,174 +13,107 @@
     <!-- HEADER -->
     <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+
             <img src="images/logo.png" alt="ring" />
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#felows-wanted">Fellows<span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav text-right">
+                    <a class="nav-item nav-link active" href="#felows-wanted">Fellows</a>
                     <a class="nav-item nav-link" href="#get-rewards">Get my reward</a>
                     <a class="nav-item nav-link" href="#best-hunters">Best hunters</a>
                     <a class="nav-item nav-link" href="#about-ring">The Ring</a>
                     <a class="nav-item nav-link" href="#join-army">Join the army</a>
-                    <a class="nav-item nav-link" href="#contact-us">Contact us</a>
-                </div>
-            </div>
+                    <a class="nav-item nav-link" href="#contact-us">Contact us</a></div></div>
         </nav>
+        
         <!-- CARROUSEUL -->
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+        <div class="carousel_container">
+            <div id="carouselCtrl" class="carousel slide" data-ride="carousel">
 
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/dark_vador.jpg" alt="carrousel-img">
-                    <div class="carousel-caption">
-                        <h3>Dangerous fellowship try to destroy the ring
-                            </h3>
-                            <p>Orcs, Goblins, Balrogs, protect your master Sauron !</p>
-                    </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/dark_vador_sized.jpg" alt="Dark Vador">
+                        <div class="carousel-caption">
+                            <h2>Dangerous fellowship try to destroy the ring </h2>
+                            <p>Orcs, Goblins, Balrogs, protect your master Sauron !</p></div></div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/army.png" alt="Army Focus">
+                        <div class="carousel-caption">
+                            <h2>My preciouuuss !</h2>
+                            <p>chuuuuuuuuuuuuuuuuuuuuuuuuu !</p></div></div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/army.png" alt="Army Focus2">
+                        <div class="carousel-caption">
+                            <h2>Beautiful !</h2>
+                            <p>print("Bootstrap = bidouillage / 20")</p></div></div>
                 </div>
 
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/army.png" alt="carrousel-img">
-                    <div class="carousel-caption">
-                        <h3>My preciouuuss !
-                            </h3>
-                            <p>chuuuuuuuuuuuuuuuuuuuuuuuuu !</p>
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#carouselCtrl" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span></a>
 
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/army.png" alt="carrousel-img">
-                    <div class="carousel-caption">
-                        <h3>Beautiful !
-                            </h3>
-                            <p>print("Bootstrap = bidouillage / 20")</p>
-                    </div>
-                </div>
+                <a class="carousel-control-next" href="#carouselCtrl" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span></a>
 
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
 
-        <!--  <section id="slideshow">
-            <h3>Dangerous fellowship try to destroy the ring</h3>
-            <p>Orcs, Goblins, Balrogs, protect your master Sauron !</p>
-            <img src="https://via.placeholder.com/800x300" alt="carrousel-img" />
-        </section> -->
     </header>
 
 
     <!-- FELOWS SECTION -->
-    <section id="felows-wanted" class="container">
-        <h2>Felows wanted dead (or alive if you want to eat them later)</h2>
+    <section id="felows-wanted">
+        <h3>Fellows wanted dead <span>(or alive if you want to eat them later)</span></h3>
 
-        <nav>
+        <nav class="text-center">
             <h3>
-                <span class="badge badge-pill badge-primary">wanted</span>
-                <span class="badge badge-pill badge-primary">Most Dangerous</span>
-                <span class="badge badge-pill badge-primary">Already Captured</span>
+                <span class="badge badge-pill">Most Wanted</span>
+                <span class="badge badge-pill active">Most Dangerous</span>
+                <span class="badge badge-pill">Already Captured</span>
             </h3>
         </nav>
+        
+        <div class="row justify-content-around">
 
-        <div class="container">
-            <div class="row">
-
-                <div class="card col-md-4 col-xs-12">
-                    <img class="card-img-top" src="http://images.innoveduc.fr/integration_gandalf.png" alt="Card image cap">
-                    <div class="card-img-overlay">
-                        <p class="rewards-info">Reward <span class="coins">1000</span> gold coins</p>
-                        <p class="wanted-name">Gandalf</p>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">The Wizard</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-
-                <div class="card col-md-4 col-xs-12">
-
-                    <img class="card-img-top" src="https://i.skyrock.net/1884/92371884/pics/3257973726_1_3_ovmrgoiw.jpg" alt="Card image cap">
-                    <div class="card-img-overlay">
-                        <p class="rewards-info">DEAD</p>
-                        <p class="wanted-name">Gollum</p>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">The Beast</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-
-                <div class="card col-md-4 col-xs-12">
-
-                    <img class="card-img-top" src="https://vignette.wikia.nocookie.net/villainsfanon/images/f/ff/Unknown-1.jpg/revision/latest?cb=20170521020324" alt="Card image cap">
-                    <div class="card-img-overlay">
-                        <p class="rewards-info">Reward <span class="coins">8000</span> gold coins</p>
-                        <p class="wanted-name">An other Card</p>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Unknown</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- 
-        <nav>
-                <h2><a href="#" class="badge badge-primary">wanted</a>
-                <a href="#" class="badge">Most Dangerous</a>
-                    <a href="#" class="badge">Already Captured</a></h2>
-        </nav>
-        <article>  
-            <h3>The Wizard</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam</p>
-                <aside>
-                    <img src="http://images.innoveduc.fr/integration_gandalf.png" alt="wizard-img" />
+            <div class="card col-md-4 col-xs-12">
+                <img class="card-img-top" src="images/gandalf.png" alt="Card image cap">
+                <div class="card-img-overlay">
                     <p class="rewards-info">Reward <span class="coins">1000</span> gold coins</p>
-                    <p class="wanted-name">Gandalf</p>
-                </aside>
-        </article>
-        <article>
-            <h3>Hobbit #3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam</p>
-            <aside>
-                <img src="http://images.innoveduc.fr/integration_gandalf.png" alt="hobbit-img" />
-                <p class="rewards-info">DEAD</p>
-                <p class="wanted-name">Gandalf</p>
-            </aside>
-        </article>
-        <article>
-            <h3>Yummy Dwarf</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam</p>
-            <aside>
-                <img src="http://images.innoveduc.fr/integration_gandalf.png" alt="dwarf-img" />
-                <p class="rewards-info">Reward <span class="coins">250</span> gold coins<p>
-                <p class="wanted-name">Gandalf</p>
-            </aside>
-        </article> -->
+                    <p class="wanted-name">gandalf</p></div>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, ..</p></div></div>
+
+            <div class="card col-md-4 col-xs-12">
+                <img class="card-img-top" src="images/aragorn.png" alt="Card image cap">
+                <div class="card-img-overlay">
+                    <p class="rewards-dead">dead</p>
+                    <p class="wanted-dead">aragorn</p></div>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, ..</p></div></div>
+
+            <div class="card col-md-4 col-xs-12">
+                <img class="card-img-top" src="images/gimli.png" alt="Card image cap">
+                <div class="card-img-overlay">
+                    <p class="rewards-info">Reward <span class="coins">8000</span> gold coins</p>
+                    <p class="wanted-name">gimli</p></div>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, ..</p></div></div>
+
+        </div>
+        <hr />
     </section>
 
-    <hr />
+    
     <!-- REWARDS SECTION -->
     <section id="get-rewards">
-        <h2>I have captured one of them, how to get my reward ?</h2>
+        <h3>I have captured one of them, how to get my reward ?</h3>
         <div class="container">
             <div class="row">
 
@@ -190,18 +123,21 @@
                         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                         officia deserunt mollit anim id est laborum.</p>
-                    <a href="#contact-us" class="btn">Contact Us</a>
-                </div>
-                <div class="col"><img class="img-thumbnail" src="https://via.placeholder.com/150x150" alt="rewards-img" />
-                </div>
+                    <a href="#contact-us" class="btn">Contact Us</a></div>
+                <div class="col">
+                    <img class="img-thumbnail" src="https://via.placeholder.com/150x150" alt="rewards-img" /></div>
 
             </div>
         </div>
+        <hr />
     </section>
-    <hr />
+
+    
     <!-- HUNTERS SECTION -->
+
     <section id="best-hunters">
-        <h2>Best hunters</h2>
+
+        <h3>Best hunters</h3>
         <div class="container">
             <div class="row">
 
@@ -211,9 +147,7 @@
                         <h3>User</h3>
                         <h5>2 captures - <span class="profile">Profile</span></h5>
                         <img src="https://via.placeholder.com/15x15" alt="like-icon" />
-                        <a href="#">Like 68K</a>
-                    </div>
-                </div>
+                        <a href="#">Like 68K</a></div></div>
 
                 <div class="media col-lg-6 col-ls-12">
                     <img src="https://via.placeholder.com/100x100" alt="user-avatar" />
@@ -221,9 +155,7 @@
                         <h3>User</h3>
                         <h5>2 captures - <span class="profile">Profile</span></h5>
                         <img src="https://via.placeholder.com/15x15" alt="like-icon" />
-                        <a href="#">Like 68K</a>
-                    </div>
-                </div>
+                        <a href="#">Like 68K</a></div></div>
 
                 <div class="media col-lg-6 col-ls-12">
                     <img src="https://via.placeholder.com/100x100" alt="user-avatar" />
@@ -231,9 +163,7 @@
                         <h3>User</h3>
                         <h5>2 captures - <span class="profile">Profile</span></h5>
                         <img src="https://via.placeholder.com/15x15" alt="like-icon" />
-                        <a href="#">Like 68K</a>
-                    </div>
-                </div>
+                        <a href="#">Like 68K</a></div></div>
 
                 <div class="media col-lg-6 col-ls-12">
                     <img src="https://via.placeholder.com/100x100" alt="user-avatar" />
@@ -241,17 +171,17 @@
                         <h3>User</h3>
                         <h5>2 captures - <span class="profile">Profile</span></h5>
                         <img src="https://via.placeholder.com/15x15" alt="like-icon" />
-                        <a href="#">Like 68K</a>
-                    </div>
-                </div>
+                        <a href="#">Like 68K</a></div></div>
 
             </div>
         </div>
+        <hr />
     </section>
-    <hr />
+
+    
     <!-- ABOUT SECTION -->
     <section id="about-ring">
-        <h2>About the ring</h2>
+        <h3>About the ring</h3>
 
         <div class="card">
             <div class="card-body">
@@ -296,12 +226,12 @@
                 </div>
             </div>
         </div>
-
+        <hr />
     </section>
-    <hr />
+    
     <!-- ARMY SECTION -->
     <section id="join-army">
-        <h2>Join Mordor Army, we need you !</h2>
+        <h3>Join Mordor Army, we need you !</h3>
         <div class="row">
             <div class="col">
                 <img src="https://via.placeholder.com/150x150" alt="army-img" />
@@ -315,11 +245,12 @@
                 <div class="text-center"><a href="#" class="btn btn-primary text-center">More info on SauronRulesThemAll.com</a></div>
             </div>
         </div>
+        <hr />
     </section>
-    <hr />
+    
     <!-- CONTACT SECTION -->
     <section id="contact-us">
-        <h2>Contact Us</h2>
+        <h3>Contact Us</h3>
         <!-- <form id="contact-form">
             <img src="https://via.placeholder.com/15x15" alt="email-icon" />
             <input type="email" name="email-input" form="contact-form" />
@@ -367,8 +298,9 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </form>
+            <hr />
     </section>
-    <hr />
+    
     <!-- FOOTER SECTION -->
     <footer>
         <section class="row">
@@ -403,7 +335,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh3IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
 
