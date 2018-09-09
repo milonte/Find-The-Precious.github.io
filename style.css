@@ -8,17 +8,31 @@
     font-family: 'anirb';
     src: url('Font/anirb___.ttf'); }
 
+/* -----BODY------- */
+
 body h3 {
     font-family: "anirb";
-    font-size: 25px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 body h3 span {
-    font-size: 20px;
+    font-size: 15px;
+}
+
+body h3 em {
+    font-family: 'tnganbi';
+    color: #Fe661D;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 30px;
 }
 
 section {
-    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 section:nth-child(even) {
@@ -33,38 +47,45 @@ section:nth-child(odd) {
 
 /* --------------- NAVBAR ------------------- */
 
-header .navbar {
+.navbar {
     background-color:#Fe661D;
 }
 
-header .nav-item {
+.nav-item {
     display: inline;
 }
+.navbar-nav {
+    text-align: right;
+}
 
-header .navbar a {
+.navbar a {
     font-family: "anirb";
     color: white;
 }
 
-header .navbar-brand {
-    font-size: 20px;
-}
-
-header .navbar-toggler-icon {
+.navbar h4 {
     color: white;
 }
 
-#navbarNav {
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+#navbarNavAltMarkup {
     text-align: right;
     background-color:#Fe661D;
 }
 
-#navbarNav a{
+#navbarNavAltMarkup a{
     font-size: 13px;
     color: white;
 }
 
-#navbarNav a:active {
+#navbarNavAltMarkup a:active {
     text-decoration: underline;
 }
 
@@ -111,9 +132,6 @@ header .navbar-toggler-icon {
 
 
 #felows-wanted {
-    position: relative;
-    padding: 0;
-    padding-top : 30px;
     text-decoration: none;
 }
 
@@ -189,4 +207,43 @@ header .navbar-toggler-icon {
 #get-rewards a {
     display: flex;
     float: right;
+}
+
+/* ----RING----- */
+
+#about-ring .card {
+    background-image: url("images/bg_light.png");
+    margin-top: 20px;
+    color: black;
+    padding: 0px;
+}
+
+#about-ring .card-body {
+    padding: 0px;
+}
+
+#about-ring .card-title {
+    background-color: #Fe661D;
+    color: white;
+    font-size: 20px;
+    font-family: "anirb";
+    padding-left: 20px;
+    height: 30px;
+}
+#about-ring .card,
+#about-ring .card-title {
+    border: 0px solid black;
+    border-radius: 10px 10px 0 0;
+}
+
+#about-ring .card-text {
+    padding: 20px;
+}
+
+/* ------- FOOTER ------- */
+
+footer .row{
+    background-color: #Fe661D;
+    color: white;
+    text-align: center;
 }
