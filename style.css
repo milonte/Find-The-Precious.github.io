@@ -12,7 +12,7 @@
 
 body h3 {
     font-family: "anirb";
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 20px;
 }
 
@@ -20,7 +20,12 @@ body h3 span {
     font-size: 15px;
 }
 
-body h3 em {
+body p {
+    font-family: "partybusiness";
+    font-size: 25px;
+}
+
+body em {
     font-family: 'tnganbi';
     color: #Fe661D;
     margin-right: 25px;
@@ -46,6 +51,12 @@ section:nth-child(odd) {
 }
 
 /* --------------- NAVBAR ------------------- */
+
+@media(max-width:990px){
+    header h4 {
+        display: none;
+    }
+}
 
 .navbar {
     background-color:#Fe661D;
@@ -91,26 +102,46 @@ section:nth-child(odd) {
 
 /* ------------CAROUSEL -------------------- */
 
+#carouselCtrl .carousel-inner,
+#carouselCtrl .carousel-control-prev,
+#carouselCtrl .carousel-control-next {
+   max-height: 470px;
+}
 
 .carousel-caption h2,
 .carousel-caption p {
     font-family: "partybusiness";
+    text-align: left;
+}
+
+.carousel-caption h2 {
+    font-size: 70px;
+}
+
+.carousel-caption p {
     font-size: 40px;
 }
 
 .carousel-caption {
-    top: 40%;
+    top: 25%;
 }
 
 /* ------------ FELLOWS WANTED ---------------- */
+
+#felows-wanted h4 em {
+    font-size:25px;
+    margin: 5px;
+}
 
 
 #felows-wanted .badge {
     color: rgba(0,0,0,60%);
     margin-top: 20px;
+    font-family: "anirb";
+    font-size: 15px;
 }
 
-#felows-wanted .badge:active {
+#felows-wanted .active {
     color: #Fe661D;
     text-decoration: underline;
 }
@@ -204,9 +235,18 @@ section:nth-child(odd) {
     font-size: 30px;
 }
 
-#get-rewards a {
-    display: flex;
+/* ------------------ REWARDS ----------------- */
+
+#get-rewards img{
     float: right;
+}
+
+#get-rewards .btn {
+    background-color: white;
+    border-radius: 0;
+    font-family: "anirb";
+    color: darkorange;
+    font-size: 25px;
 }
 
 /* ----RING----- */
@@ -238,6 +278,20 @@ section:nth-child(odd) {
 
 #about-ring .card-text {
     padding: 20px;
+}
+
+#about-ring img {
+    min-width: 100px;
+    min-height: 100px;
+    width: 20%;
+    height: 20%;
+}
+
+/* ----------- ARMY ---------------- */
+
+#join-army img {
+    width: 100%;
+    min-width: 150px;
 }
 
 /* ------- FOOTER ------- */
