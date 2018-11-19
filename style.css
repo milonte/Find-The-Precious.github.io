@@ -1,12 +1,17 @@
 @font-face {
     font-family: 'tnganbi';
-    src: url('Font/tnganbi.ttf'); }
+    src: url('Font/tnganbi.ttf');
+}
+
 @font-face {
     font-family: 'partybusiness';
-    src: url('Font/partybusiness.ttf'); }
-@font-face { 
+    src: url('Font/partybusiness.ttf');
+}
+
+@font-face {
     font-family: 'anirb';
-    src: url('Font/anirb___.ttf'); }
+    src: url('Font/anirb___.ttf');
+}
 
 /* -----BODY------- */
 
@@ -52,19 +57,20 @@ section:nth-child(odd) {
 
 /* --------------- NAVBAR ------------------- */
 
-@media(max-width:990px){
+@media(max-width:990px) {
     header h4 {
         display: none;
     }
 }
 
 .navbar {
-    background-color:#Fe661D;
+    background-color: #Fe661D;
 }
 
 .nav-item {
     display: inline;
 }
+
 .navbar-nav {
     text-align: right;
 }
@@ -88,10 +94,10 @@ section:nth-child(odd) {
 
 #navbarNavAltMarkup {
     text-align: right;
-    background-color:#Fe661D;
+    background-color: #Fe661D;
 }
 
-#navbarNavAltMarkup a{
+#navbarNavAltMarkup a {
     font-size: 13px;
     color: white;
 }
@@ -105,7 +111,7 @@ section:nth-child(odd) {
 #carouselCtrl .carousel-inner,
 #carouselCtrl .carousel-control-prev,
 #carouselCtrl .carousel-control-next {
-   max-height: 470px;
+    max-height: 470px;
 }
 
 .carousel-caption h2,
@@ -129,13 +135,13 @@ section:nth-child(odd) {
 /* ------------ FELLOWS WANTED ---------------- */
 
 #felows-wanted h4 em {
-    font-size:25px;
+    font-size: 25px;
     margin: 5px;
 }
 
 
 #felows-wanted .badge {
-    color: rgba(0,0,0,60%);
+    color: rgba(0, 0, 0, 60%);
     margin-top: 20px;
     font-family: "anirb";
     font-size: 15px;
@@ -152,7 +158,7 @@ section:nth-child(odd) {
     padding: 0px;
 }
 
-#felows-wanted .card:hover img{
+#felows-wanted .card:hover img {
     opacity: 1;
 }
 
@@ -181,7 +187,7 @@ section:nth-child(odd) {
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-    left:0;
+    left: 0;
     right: 0;
 }
 
@@ -219,17 +225,17 @@ section:nth-child(odd) {
     top: 40%;
     bottom: 40%;
     font-size: 45px;
-    padding:5px;
+    padding: 5px;
     font-family: "partybusiness";
 }
 
-#felows-wanted .card:hover .wanted-name{
-    background-color: rgba(0,0,0,50%);
+#felows-wanted .card:hover .wanted-name {
+    background-color: rgba(0, 0, 0, 50%);
 }
 
 #felows-wanted .card {
-    background-color: rgba(0,0,0,90%);
-    color: rgba(255,255,255,80%);
+    background-color: rgba(0, 0, 0, 90%);
+    color: rgba(255, 255, 255, 80%);
     padding: 5px;
     font-family: "partybusiness";
     font-size: 30px;
@@ -237,7 +243,7 @@ section:nth-child(odd) {
 
 /* ------------------ REWARDS ----------------- */
 
-#get-rewards img{
+#get-rewards img {
     float: right;
 }
 
@@ -270,6 +276,7 @@ section:nth-child(odd) {
     padding-left: 20px;
     height: 30px;
 }
+
 #about-ring .card,
 #about-ring .card-title {
     border: 0px solid black;
@@ -296,8 +303,114 @@ section:nth-child(odd) {
 
 /* ------- FOOTER ------- */
 
-footer .row{
+footer .row {
     background-color: #Fe661D;
     color: white;
     text-align: center;
 }
+
+.rings {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: anirb;
+}
+
+
+.ring-pabo {
+    display: inline-block;
+    margin: -20px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 5px solid darkorange;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0 none, 0 0 0 none;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .ring-degueulasse {
+    display: inline-block;
+    margin: -20px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #ffd904;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 4px #ff7d04, 0 0 4px #ff7d04;
+  }
+  .ring-degueulasse h4 {
+    padding-top: 30px;
+  }
+  
+  .ring-1 {
+    display: inline-block;
+    margin: -19px;
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border: 6.5px solid black;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 2px black, 0 0 2px black;
+    align-self: center;
+  }
+  
+  .ring-2 {
+    display: inline-block;
+    margin: -18px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 7px solid black;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 2px black, 0 0 2px black;
+    align-self: center;
+  }
+  
+  .ring-3 {
+    display: inline-block;
+    margin: -17px;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border: 7.5px solid black;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 2px black, 0 0 2px black;
+    align-self: center;
+  }
+  
+  .ring-4 {
+    display: inline-block;
+    margin: -16px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 8px solid black;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 2px black, 0 0 2px black;
+    align-self: center;
+  }
+  
+  .ring-5 {
+    display: inline-block;
+    margin: -15px;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border: 8.5px solid black;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 2px black, 0 0 2px black;
+    align-self: center;
+  }
+  
+  .ring-6 {
+    display: inline-block;
+    margin: -14px;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 9px solid black;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 2px black, 0 0 2px black;
+    align-self: center;
+  }

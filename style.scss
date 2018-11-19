@@ -1,0 +1,31 @@
+@mixin ring($color, $sha-color, $sha-size, $size, $mar) {
+    display: inline-block;
+      margin: -20+$mar+px;
+      position: relative;
+      width: $size+px;
+      height: $size+px;
+      border: ($size/10)+px solid $color;
+      border-radius: 100%;
+      box-shadow: inset 0px 0px $sha-size $sha-color, 0 0 $sha-size $sha-color;
+  }
+  
+  .ring-pabo {
+    @include ring( darkorange, none, 0, 50, 0);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .ring-degueulasse {
+    @include ring( rgb(255, 217, 4), #ff7d04, 4px, 200, 0);
+      h4 {
+      padding-top: 30px;
+    }
+  }
+  
+  @for $i from 1 through 6 {
+      .ring-#{$i} {
+          @include ring( black, black, 2px, 60+(5*$i), $i);
+          align-self: center;    
+      }
+  }
+  
